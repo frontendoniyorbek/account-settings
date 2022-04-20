@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil sozlamalari</title>
+  <!-- GOOGLE-FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- CSS LINK -->
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <div class="main-content">
+    <div class="container">
+      <div class="profile-setings">
+        <form class="form" action="https://echo.htmlacademy.ru" method="POST">
+          <header class="profile-seting-header">
+            <h1 class="profile-setings-heading">Account settings</h1>
+            <a class="profile-setings-button" href="#">
+              <img src="./img/close_white.svg" alt="Profil img">
+            </a>
+          </header>
+
+          <div class="profile-seting-form-body">
+            <img class="form-img" src="./img/avatar.jpg" alt="avatar" width="60" height="60" srcset="./img/avatar.jpg 1x, ./img/avatar@2X.jpg 2x">
+            <div class="form-wrapper">
+              <div class="form-filler">
+                <label class="form-label" for="username">username</label>
+                <input class="form-input" type="text" name="username" id="username" required placeholder="Enter your username">
+              </div>
+            <div class="profile-setings-row">
+              <div class="form-filler">
+                <label class="form-label" for="firstname">first name</label>
+                <input class="form-input" type="text" name="firstname" id="firstname" required placeholder="Enter your first name">
+              </div>
+              <div class="form-filler">
+                <label class="form-label" for="lastname">last name</label>
+              <input class="form-input" type="text" name="lastname" id="lastname" required placeholder="Enter your last name">
+              </div>
+            </div>
+            <div class="form-filler">
+              <label class="form-label" for="email">email</label>
+            <input class="form-input" type="email" name="email" id="email" required placeholder="enter your email">
+            </div>
+            <div class="form-filler">
+              <label class="form-label" for="bio">bio</label>
+            <textarea class="form-textarea" name="about" id="about" placeholder="Tell us about yourself"></textarea>
+            </div>
+            </div>
+          </div>
+
+          <footer class="profile-setings-form-actions">
+            <button class="profile-setings-form-action" type="button">Cancel</button>
+            <button class="profile-setings-form-action" type="submit">Save</button>
+          </footer>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
